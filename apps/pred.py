@@ -125,7 +125,7 @@ def app():
 
     input_df = user_input_features()
 
-    data_raw = pd.read_csv('C:/Users/iamsw/OneDrive/Desktop/Data Science/Projects/PBM App/apps/bank-additional-full.csv',sep=';')
+    data_raw = pd.read_csv('bank-additional-full.csv',sep=';')
     data_raw.rename(columns={"emp.var.rate":"emp_var_rate","cons.price.idx":"cons_price_idx","cons.conf.idx":"cons_conf_idx","nr.employed":"nr_employed"},inplace=True)
     data_raw['nr_employed']=data_raw['nr_employed'].astype('int64')
     data_raw['target'] = data_raw.apply(lambda row: 1 if row["y"] == "yes" else 0, axis=1)
@@ -161,7 +161,7 @@ def app():
 
     data = data[:1] 
 
-    load_clf = pickle.load(open('C:/Users/iamsw/OneDrive/Desktop/Data Science/Projects/PBM App/apps/bank_clf.pkl','rb'))
+    load_clf = pickle.load(open('bank_clf.pkl','rb'))
     
 
     prediction = load_clf.predict(data)  
