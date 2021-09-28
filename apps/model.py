@@ -88,15 +88,15 @@ def app():
     # Imputation of missing values by the modal value
     cat_data_imputed = cat_data.apply(lambda x: x.fillna(x.value_counts().index[0]))
 
-        # Handling Outliers
-        #age
-        #num_data.loc[num_data['age']>=69.5,'age'] = 69.5
-        #campaign
-        #num_data.loc[num_data['campaign']<=1,'campaign'] = 1
-        #num_data.loc[num_data['campaign']>=5,'campaign'] = 5
+    # Handling Outliers
+    #age
+    num_data.loc[num_data['age']>=69.5,'age'] = 69.5
+    #campaign
+    num_data.loc[num_data['campaign']<=1,'campaign'] = 1
+    num_data.loc[num_data['campaign']>=5,'campaign'] = 5
 
-        #cons_conf_idx
-        #num_data.loc[num_data['cons_conf_idx']>=-36,'cons_conf_idx'] = -36
+    #cons_conf_idx
+    num_data.loc[num_data['cons_conf_idx']>=-36,'cons_conf_idx'] = -36
     
     #pdays
     num_data['pdays2']=num_data.apply(lambda row: function(row),axis=1)
@@ -110,17 +110,17 @@ def app():
     data_new = pd.concat([num_data,cat_data_imputed],axis=1)
         #new_df = st.dataframe(data_new.head(50))
     
-        # #handling the imbalance dataset
-        # data1=data_new.copy()
-        # data2=data1[data1.target==1]
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-        # data1=pd.concat([data1, data2])
-    bal_data=data_new.copy()
+    #handling the imbalance dataset
+    data1=data_new.copy()
+    data2=data1[data1.target==1]
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    data1=pd.concat([data1, data2])
+    bal_data=data1.copy()
 
     #Label encoding
     le_data = bal_data.copy()
