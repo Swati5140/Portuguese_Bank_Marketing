@@ -32,7 +32,7 @@ def app():
     """)
     st.write("**Dataset : ** Data is obtained from Kaggle.")
 
-    df = pd.read_csv('C:/Users/iamsw/OneDrive/Desktop/Data Science/Projects/PBM App/apps/bank-additional-full.csv',sep=';')
+    df = pd.read_csv('bank-additional-full.csv',sep=';')
 
     def convert_df(df):
         return df.to_csv().encode('utf-8')

@@ -60,7 +60,7 @@ def app():
         col2.subheader('**Dataset**')
 
     else:
-        data=pd.read_csv('C:/Users/iamsw/OneDrive/Desktop/Data Science/Projects/PBM App/apps/bank-additional-full.csv',sep=';')
+        data=pd.read_csv('bank-additional-full.csv',sep=';')
         col2.subheader('**Dataset**')
         
             
