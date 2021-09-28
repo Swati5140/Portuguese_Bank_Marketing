@@ -1,40 +1,15 @@
-
-altair==4.1.0
-emoji==1.4.2
-emojis==0.6.0
-imagecodecs @ file:///C:/ci/imagecodecs_1621408025737/work
-imageio @ file:///tmp/build/80754af9/imageio_1617700267927/work
-imagesize @ file:///home/ktietz/src/ci/imagesize_1611921604382/work
-imbalanced-learn==0.8.0
-imblearn==0.0
-importlib-metadata @ file:///C:/ci/importlib-metadata_1617877484576/work
-matplotlib @ file:///C:/ci/matplotlib-suite_1613408055530/work
-
-numpy @ file:///C:/ci/numpy_and_numpy_base_1618497418457/work
-numpydoc @ file:///tmp/build/80754af9/numpydoc_1605117425582/work
-
-pandas @ file:///C:/ci/pandas_1618365634936/work
+matplotlib==3.3.4
+numpy==1.19.5
+pandas==1.2.4
 pandas-flavor==0.2.0
-
-pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-
-pingouin @ file:///home/conda/feedstock_root/build_artifacts/pingouin_1622161359257/work
-
+pickleshare==0.7.5
 plotly==5.3.1
-
-ply==3.11
-
 scikit-image==0.18.1
-scikit-learn @ file:///C:/ci/scikit-learn_1621370563523/work
-scipy @ file:///C:/ci/scipy_1618856128765/work
-seaborn @ file:///tmp/build/80754af9/seaborn_1608578541026/work
-
+scikit-learn==0.24.2
+scipy==1.6.2
+seaborn==0.11.1
 shap==0.39.0
-
 sklearn==0.0
-
 streamlit==0.89.0
-
 tables==3.6.1
-tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_1614001031686/work
 xgboost==1.4.2
